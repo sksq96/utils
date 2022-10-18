@@ -9,8 +9,9 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
-# wormhole
+# file transfer
 sudo apt install magic-wormhole
+curl https://getcroc.schollz.com | bash
 
-# nano
-sudo apt install nano
+# tools
+sudo apt install nano tmux htop
