@@ -11,6 +11,12 @@ source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # pyenv
 curl https://pyenv.run | bash
 
+### COPY BELOW to ~/.zshrc
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 
 # file transfer
 sudo apt install magic-wormhole
