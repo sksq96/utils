@@ -8,6 +8,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+source ~/.zshrc
+
 # pyenv
 curl https://pyenv.run | bash
 
@@ -17,6 +19,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+source ~/.zshrc
 
 # file transfer
 sudo apt install magic-wormhole
