@@ -1,3 +1,7 @@
+## wget https://raw.githubusercontent.com/sksq96/utils/master/setup.sh
+## bash setup.sh
+
+
 # zsh
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
