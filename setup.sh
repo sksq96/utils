@@ -13,12 +13,15 @@ source ~/.zshrc
 # pyenv
 curl https://pyenv.run | bash
 
-### COPY BELOW to ~/.zshrc
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
+### COPY BELOW to ~/.zshrc
+CONFIG="
+export PYENV_ROOT=\"\$HOME/.pyenv\"
+[[ -d \$PYENV_ROOT/bin ]] && export PATH=\"\$PYENV_ROOT/bin:\$PATH\"
+eval \"\$(pyenv init -)\"
+eval \"\$(pyenv virtualenv-init -)\"
+"
+echo "$CONFIG" >> ~/.zshrc
 source ~/.zshrc
 
 # file transfer
