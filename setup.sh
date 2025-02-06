@@ -14,6 +14,12 @@ source ./.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.zshrc
 
+
+# uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv python install
+
+
 # pyenv
 curl https://pyenv.run | bash
 
