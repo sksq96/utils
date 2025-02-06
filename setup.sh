@@ -18,7 +18,7 @@ source ~/.zshrc
 # uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv python install
-
+uv pip install nvitop
 
 # pyenv
 curl https://pyenv.run | bash
